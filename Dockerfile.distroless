@@ -22,4 +22,4 @@ ENV ENV=production
 
 EXPOSE 5000
 
-CMD ["app.py"]
+CMD ["python3", "app.py"]
