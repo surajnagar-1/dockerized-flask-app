@@ -1,7 +1,7 @@
-# 🚀 Dockerized Flask App 
+# 🚀 Dockerized Flask App
 
 A stylish Python Flask web application containerized using Docker.
-This project demonstrates **multi-stage builds with Distroless images** and **Docker Compose orchestration** for DevOps practice.
+This project is built for practicing DevOps concepts like containerization, environment variables, and service orchestration using Docker Compose.
 
 ---
 
@@ -12,8 +12,6 @@ This project demonstrates **multi-stage builds with Distroless images** and **Do
 * 🐳 Docker support
 * ⚙️ Environment variables
 * ❤️ Health check endpoint
-* 🚀 Multi-stage Docker build
-* 🔒 Distroless image (secure & lightweight)
 * 📦 Docker Compose support
 
 ---
@@ -28,7 +26,7 @@ http://localhost:5000
 
 ---
 
-## 🐳 Run with Docker (Basic)
+## 🐳 Run with Docker
 
 ### 🔹 Build Image
 
@@ -40,7 +38,7 @@ docker run -p 5000:5000 flask-docker-app
 
 ---
 
-## 🚀 Run with Docker Compose (Distroless)
+## 🚀 Run with Docker Compose
 
 docker-compose up --build
 
@@ -66,20 +64,9 @@ ENV  → Environment mode (development/production)
 ## 💡 DevOps Concepts Used
 
 * Docker containerization
-* Multi-stage builds
-* Distroless images (security best practice)
 * Docker Compose orchestration
 * Environment variable handling
 * Health check endpoint
-
----
-
-## 🔒 Why Distroless?
-
-* Smaller image size
-* No unnecessary tools (more secure)
-* Reduced attack surface
-* Production-ready approach
 
 ---
 
@@ -93,4 +80,3 @@ Aspiring DevOps Engineer 🚀
 ## ⭐ Support
 
 If you like this project, give it a ⭐ on GitHub!
-
