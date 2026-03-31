@@ -4,7 +4,7 @@ services:
   web:
     build:
       context: .
-      dockerfile: Dockerfile.distroless
+      dockerfile: Dockerfile
 
     container_name: flask-app
 
