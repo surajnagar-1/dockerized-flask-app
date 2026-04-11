@@ -13,6 +13,7 @@ This project is built for practicing DevOps concepts like containerization, envi
 * ⚙️ Environment variables
 * ❤️ Health check endpoint
 * 📦 Docker Compose support
+* 🔄 Jenkins CI/CD pipeline
 
 ---
 
@@ -28,13 +29,8 @@ http://localhost:5000
 
 ## 🐳 Run with Docker
 
-### 🔹 Build Image
-
-docker build -t flask-docker-app .
-
-### 🔹 Run Container
-
-docker run -p 5000:5000 flask-docker-app
+docker build -t flask-app .
+docker run -p 5000:5000 flask-app
 
 ---
 
@@ -44,6 +40,19 @@ docker-compose up --build
 
 👉 Open in browser:
 http://localhost:5000
+
+---
+
+## 🔄 Jenkins CI/CD Pipeline
+
+This project includes a Jenkins pipeline to automate the complete workflow:
+
+### 🔹 Jenkins Pipeline Overview
+
+* **Code Clone** → Pulls latest code from GitHub
+* **Build** → Builds Docker image
+* **Push to Docker Hub** → Pushes image to Docker Hub
+* **Deploy** → Runs container using Docker Compose
 
 ---
 
@@ -57,7 +66,7 @@ http://localhost:5000
 ## ⚙️ Environment Variables
 
 PORT → Application port (default: 5000)
-ENV  → Environment mode (development/production)
+ENV  → Environment mode
 
 ---
 
@@ -65,8 +74,9 @@ ENV  → Environment mode (development/production)
 
 * Docker containerization
 * Docker Compose orchestration
+* CI/CD using Jenkins
+* Docker Hub integration
 * Environment variable handling
-* Health check endpoint
 
 ---
 
@@ -78,5 +88,3 @@ Aspiring DevOps Engineer 🚀
 ---
 
 ## ⭐ Support
-
-If you like this project, give it a ⭐ on GitHub!
